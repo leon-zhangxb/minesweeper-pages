@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minesweeper — Relive the Classic Win95 Experience｜经典扫雷</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+      "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.75;
+    color: #1c1c1e;
+    background: #faf9f6;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  h1 { font-size: 34px; line-height: 1.25; margin: 0 0 10px; letter-spacing: -0.5px; }
+  h2 { font-size: 21px; margin: 44px 0 14px; color: #000080; }
+  h3 { font-size: 16px; margin: 0 0 4px; color: #000080; }
+  p, li { font-size: 15.5px; color: #333; }
+  .hero { padding: 22px 0 6px; }
+  .tagline { font-size: 17px; color: #6b6257; margin: 0 0 24px; }
+  .cta {
+    display: inline-block;
+    background: #000080;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15.5px;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 12px;
+  }
+  .cta:hover { background: #000060; }
+  .hint { font-size: 12.5px; color: #8a8378; margin-top: 10px; }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 6px; }
+  .card {
+    background: #fff;
+    border: 1px solid #ece6da;
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .card p { margin: 4px 0 0; font-size: 14.5px; color: #55504a; }
+  .badge {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #000080;
+    background: #e8e8f0;
+    border-radius: 999px;
+    padding: 2px 10px;
+    margin-bottom: 6px;
+  }
+  ul.features { padding-left: 22px; }
+  ul.features li { margin: 6px 0; }
+  .quote {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #000080;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 18px 0;
+    font-size: 14.5px;
+    color: #55504a;
+  }
+  hr.divider { border: none; border-top: 1px solid #e5dfd3; margin: 52px 0 40px; }
+  a { color: #1a66b3; }
+  footer { font-size: 12.5px; color: #8a8378; margin-top: 44px; }
+  @media (min-width: 560px) { .cards { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<main>
+
+<!-- ==================== Hero ==================== -->
+<div class="hero">
+  <h1>Minesweeper</h1>
+  <p class="tagline">The legendary logic puzzle from Windows&nbsp;95 &mdash; reborn
+  for iPhone and iPad. Six difficulty levels, custom boards, and zero distractions.
+  Pure reasoning, in your pocket.</p>
+  <a class="cta" href="https://apps.apple.com/app/id6822191921">Download on the App Store</a>
+</div>
+
+<!-- ==================== Six difficulty cards ==================== -->
+<h2>Six Levels of Challenge</h2>
+<div class="cards">
+  <div class="card">
+    <span class="badge">Beginner</span>
+    <h3>Beginner — 9&times;9, 10 mines</h3>
+    <p>The classic first step. Small board, few mines, perfect for learning the
+    rules and building confidence.</p>
+  </div>
+  <div class="card">
+    <span class="badge">Intermediate</span>
+    <h3>Intermediate — 9&times;12, 20 mines</h3>
+    <p>The original Windows 3.1 board, slightly taller. A gentle step up that
+    sharpens pattern reading.</p>
+  </div>
+  <div class="card">
+    <span class="badge">Expert</span>
+    <h3>Expert — 9&times;16, 30 mines</h3>
+    <p>The Windows 95 expert board. Demands careful flagging and a sharp eye for
+    numeric patterns.</p>
+  </div>
+  <div class="card">
+    <span class="badge">Ultra</span>
+    <h3>Ultra — 16&times;16, 50 mines</h3>
+    <p>A wider battlefield where every click matters. For players who want more
+    room to plan.</p>
+  </div>
+  <div class="card">
+    <span class="badge">Hell</span>
+    <h3>Hell — 16&times;30, 99 mines</h3>
+    <p>480 cells, 99 mines, one wrong move ends it all. The ultimate endurance
+    test for veteran players.</p>
+  </div>
+  <div class="card">
+    <span class="badge">Custom</span>
+    <h3>Custom — your size, your mines</h3>
+    <p>Pick any board from 9&ndash;36 columns by 9&ndash;64 rows, and any mine
+    count from 1 up to cells&nbsp;&minus;&nbsp;1.</p>
+  </div>
+</div>
+
+<!-- ==================== Features ==================== -->
+<h2>Why You&rsquo;ll Love It</h2>
+<ul class="features">
+  <li><strong>Authentic Windows 95 visual style</strong> &mdash; the gray chrome,
+  the beveled cells, the smiley face, faithfully recreated.</li>
+  <li><strong>Six difficulty levels + unlimited custom</strong> &mdash; from
+  9&times;9 beginner boards to 16&times;30 hellscapes.</li>
+  <li><strong>First-tap safety</strong> &mdash; the mines are placed only after
+  your first click, so you never lose on the opening move.</li>
+  <li><strong>Long-press to flag</strong>, or toggle flag mode and tap to mark
+  suspected mines. The mine counter updates live.</li>
+  <li><strong>Chord tap</strong> &mdash; tap a number whose flagged neighbors
+  equal its value to auto-reveal the rest. The classic desktop shortcut.</li>
+  <li><strong>Hint button</strong> &mdash; when truly stuck, reveal one random
+  safe cell and keep going.</li>
+  <li><strong>Pause &amp; resume</strong> automatically when the app goes to
+  background, so your timer never cheats you.</li>
+  <li><strong>Haptic feedback</strong> on flag, win, and loss, so the game feels
+  alive in your hands.</li>
+  <li><strong>Best-time tracking</strong> for every difficulty &mdash; chase your
+  own records, not someone else&rsquo;s.</li>
+  <li><strong>16 interface languages</strong>, switchable at any time and
+  applied instantly.</li>
+  <li><strong>100% offline</strong> &mdash; no ads, no accounts, no analytics, no
+  network of any kind. Just you and the board.</li>
+  <li><strong>Portrait &amp; landscape</strong> on iPhone and iPad.</li>
+</ul>
+
+<!-- ==================== Heritage ==================== -->
+<h2>More Than a Game</h2>
+<p>Minesweeper has been a fixture of personal computing since the early 1990s.
+Microsoft&rsquo;s 1992 Windows 3.1 release made it a household name, and the
+1995 Windows 95 version &mdash; with its smiley face, mine counter, and 16&times;16
+expert board &mdash; is the one most people remember. Generations of office
+workers, students, and travelers have sharpened their logic on this grid.</p>
+<div class="quote">This app keeps that 1995 feel intact on modern iOS: the same
+gray palette, the same first-click safety, the same chord-tap shortcut &mdash;
+rebuilt in SwiftUI for the iPhone and iPad you carry today.</div>
+
+<hr class="divider">
+
+<!-- ==================== 中文 ==================== -->
+<h2>经典扫雷 — 复刻 Windows 95 的怀旧体验</h2>
+<p>扫雷（Minesweeper）是 20 世纪 90 年代最广为人知的单人逻辑游戏之一。
+1992 年随 Windows 3.1 进入大众视野，1995 年随 Windows 95 一同推出的版本——
+灰色边框、笑脸表情、地雷计数器与 16&times;16 的专家级棋盘——成为一代人共同的
+电脑记忆。</p>
+<p>本应用以 SwiftUI 完整复刻这份经典：6 种内置难度 + 无限自定义、长按插旗、
+和弦点击、灯泡提示、首次点击安全、暂停恢复与触觉反馈；并提供 16 种界面语言、
+完全离线、无广告无账号。让这款跨越三十年的经典在 iPhone 与 iPad 上焕发新生。</p>
+
+<h2>Links</h2>
+<ul>
+  <li><a href="../privacy-policy/">Privacy Policy / 隐私政策</a></li>
+  <li><a href="../support/">Support / 技术支持</a></li>
+</ul>
+
+<footer>&copy; 2026 Wuhan Jindouzi Technology Co., Ltd.
+All rights reserved.<br>
+This page is the official marketing page for the Minesweeper iOS app.<br>
+本页面为经典扫雷 iOS 应用的官方宣传页。</footer>
+
+</main>
+</body>
+</html>

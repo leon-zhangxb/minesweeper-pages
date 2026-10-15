@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Minesweeper｜技术支持 — 经典扫雷</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+      "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.75;
+    color: #1c1c1e;
+    background: #faf9f6;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 22px 80px; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  h2 { font-size: 19px; margin: 38px 0 12px; color: #000080; }
+  p, li { font-size: 15.5px; color: #333; }
+  .subtitle { font-size: 13px; color: #8a8378; margin: 0 0 26px; }
+  .app { font-weight: 600; }
+  .contact {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #000080;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 18px 0 8px;
+  }
+  .contact p { margin: 4px 0; }
+  details {
+    background: #fff;
+    border: 1px solid #ece6da;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin: 10px 0;
+  }
+  details summary {
+    font-size: 15.5px;
+    font-weight: 600;
+    color: #000080;
+    cursor: pointer;
+    list-style: none;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after { content: "＋"; float: right; color: #000080; font-weight: 400; }
+  details[open] summary::after { content: "－"; }
+  details p { margin: 10px 0 2px; }
+  hr.divider { border: none; border-top: 1px solid #e5dfd3; margin: 56px 0 44px; }
+  a { color: #1a66b3; }
+  footer { font-size: 12.5px; color: #8a8378; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+
+<!-- ==================== English ==================== -->
+<h1>Support</h1>
+<p class="subtitle"><span class="app">Minesweeper</span> · We are happy to help.</p>
+
+<div class="contact">
+  <p><strong>Contact us</strong></p>
+  <p>Email: 1057194864@qq.com</p>
+  <p>We usually reply within 2&ndash;3 business days. To help us resolve your issue
+  faster, please include your device model, iOS version, and the difficulty level
+  you were playing.</p>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<details>
+  <summary>How do I start a game?</summary>
+  <p>On the home screen, tap any of the six difficulty cards. The board is ready
+  immediately. Your first tap is always safe &mdash; the mines are placed after
+  your first move so you never lose on the opening click.</p>
+</details>
+
+<details>
+  <summary>What are the six difficulty levels?</summary>
+  <p>Beginner (9&times;9, 10 mines), Intermediate (9&times;12, 20 mines), Expert
+  (9&times;16, 30 mines), Ultra (16&times;16, 50 mines), Hell (16&times;30, 99
+  mines), and Custom (you choose the board size from 9&ndash;36 columns by
+  9&ndash;64 rows, and the number of mines).</p>
+</details>
+
+<details>
+  <summary>How does Custom difficulty work?</summary>
+  <p>Choose any board width between 9 and 36 columns, any height between 9 and 64
+  rows, and any mine count from 1 up to (rows &times; columns) &minus; 1. The
+  configuration is saved to your device and applied the next time you play Custom.</p>
+</details>
+
+<details>
+  <summary>How do I flag a cell I think is a mine?</summary>
+  <p>Two ways: long-press a closed cell to drop or remove a flag, or tap the flag
+  icon in the toolbar to enter &ldquo;flag mode&rdquo; and then tap cells normally
+  to toggle flags. The mine counter at the top shows remaining mines minus flags.</p>
+</details>
+
+<details>
+  <summary>What is chord tap?</summary>
+  <p>When a revealed number is surrounded by exactly that many flags, tap the
+  number again to auto-reveal all remaining unflagged neighbors. This is the
+  classic &ldquo;chord&rdquo; shortcut from desktop Minesweeper.</p>
+</details>
+
+<details>
+  <summary>What does the &ldquo;Hint&rdquo; button do?</summary>
+  <p>It reveals one random safe cell. Use it when you are truly stuck &mdash; but
+  note that hint reveals do count as normal moves and the timer keeps running.</p>
+</details>
+
+<details>
+  <summary>Where are my best times stored?</summary>
+  <p>Locally on your device only, in iOS UserDefaults (one record per difficulty
+  level). We have no access to them, and they are removed permanently when you
+  delete the app.</p>
+</details>
+
+<details>
+  <summary>Does the app need an internet connection?</summary>
+  <p>No. The game is 100% offline &mdash; no network access at any time, no
+  leaderboard, no cloud sync, no ads, no analytics.</p>
+</details>
+
+<details>
+  <summary>Do I need an account or login?</summary>
+  <p>No. The app has no account system, no ads, and no in-app purchases.</p>
+</details>
+
+<details>
+  <summary>How do I switch the interface language?</summary>
+  <p>Home screen &rarr; Settings &rarr; Language. Choose from 16 languages; the
+  change takes effect immediately.</p>
+</details>
+
+<details>
+  <summary>What are the system requirements?</summary>
+  <p>iOS 16.0 or later. The app supports iPhone and iPad, in both portrait and
+  landscape orientation.</p>
+</details>
+
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>Delete the app from your device. All locally stored data (difficulty choice,
+  custom configuration, best times, and language preference) is removed together
+  with the app.</p>
+</details>
+
+<hr class="divider">
+
+<!-- ==================== 中文 ==================== -->
+<h1>技术支持</h1>
+<p class="subtitle"><span class="app">经典扫雷（Minesweeper）</span> · 我们很乐意为您提供帮助。</p>
+
+<div class="contact">
+  <p><strong>联系我们</strong></p>
+  <p>邮箱：1057194864@qq.com</p>
+  <p>我们通常在 2&ndash;3 个工作日内回复。为便于更快解决问题，请注明您的设备型号、
+  iOS 版本以及出现问题的难度级别。</p>
+</div>
+
+<h2>常见问题</h2>
+
+<details>
+  <summary>如何开始一局游戏？</summary>
+  <p>在首页点击任意一个难度卡片即可开局。棋盘会立刻就绪。第一次点击始终是安全的——
+  应用会在您首次落子后才布雷，因此您永远不会一开局就踩雷。</p>
+</details>
+
+<details>
+  <summary>六个难度有什么区别？</summary>
+  <p>初级（9&times;9，10 雷）、中级（9&times;12，20 雷）、高级（9&times;16，30 雷）、
+  顶级（16&times;16，50 雷）、地狱（16&times;30，99 雷）、自定义（您可自由选择
+  9&ndash;36 列、9&ndash;64 行的棋盘大小与地雷数）。</p>
+</details>
+
+<details>
+  <summary>自定义难度如何使用？</summary>
+  <p>可设置列数为 9&ndash;36，行数为 9&ndash;64，地雷数为 1 至（行&times;列&minus;1）
+  之间的任意值。配置会保存到您的设备，下次选择&ldquo;自定义&rdquo;时自动生效。</p>
+</details>
+
+<details>
+  <summary>如何给可疑的格子插旗？</summary>
+  <p>两种方式：长按一个未翻开的格子可插旗 / 取消插旗；或先点击工具栏上的小旗图标
+  进入&ldquo;插旗模式&rdquo;，然后点击格子来切换插旗状态。顶部计数器显示
+  &ldquo;剩余雷数 &minus; 已插旗数&rdquo;。</p>
+</details>
+
+<details>
+  <summary>什么是&ldquo;和弦点击&rdquo;？</summary>
+  <p>当一个已翻开的数字周围的旗数与该数字相等时，再次点击该数字会自动翻开其
+  周围所有未插旗的格子。这是桌面版扫雷经典的&ldquo;和弦&rdquo;快捷操作。</p>
+</details>
+
+<details>
+  <summary>&ldquo;灯泡提示&rdquo;按钮有什么用？</summary>
+  <p>会自动翻开一个随机的安全格。建议在实在卡住时使用——提示翻开的格子算正常
+  落子，计时器会继续。</p>
+</details>
+
+<details>
+  <summary>我的最佳成绩保存在哪里？</summary>
+  <p>仅保存在您的设备本地 iOS UserDefaults 中（每个难度一条记录）。我们无法访问
+  这些数据；删除应用后这些记录会被永久清除。</p>
+</details>
+
+<details>
+  <summary>应用需要联网吗？</summary>
+  <p>不需要。游戏 100% 离线运行——任何时候都不访问网络，没有排行榜、没有云端
+  同步、没有广告、也没有分析上传。</p>
+</details>
+
+<details>
+  <summary>需要注册账号或登录吗？</summary>
+  <p>不需要。本应用没有账号系统，没有广告，也不含内购。</p>
+</details>
+
+<details>
+  <summary>如何切换界面语言？</summary>
+  <p>首页 &rarr; 设置 &rarr; 语言切换。可从 16 种语言中选择，切换后立即生效。</p>
+</details>
+
+<details>
+  <summary>系统要求是什么？</summary>
+  <p>需要 iOS 16.0 或更高版本。支持 iPhone 与 iPad，支持竖屏与横屏。</p>
+</details>
+
+<details>
+  <summary>如何删除我的数据？</summary>
+  <p>从设备上删除本应用即可。所有本地存储的数据（难度选择、自定义配置、
+  最佳成绩与语言偏好）会随应用一并移除。</p>
+</details>
+
+<footer>This page is the official Support page for the Minesweeper iOS app.<br>
+本页面为经典扫雷 iOS 应用的官方技术支持页面。</footer>
+
+</main>
+</body>
+</html>
