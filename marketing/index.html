@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minesweeper — Relive the Classic Win95 Experience｜经典扫雷</title>
+<title>Minesweeper — Classic Logic, Modern Feel｜经典扫雷</title>
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
@@ -43,6 +43,7 @@
     padding: 14px 16px;
   }
   .card p { margin: 4px 0 0; font-size: 14.5px; color: #55504a; }
+  .card.daily { border-color: #b9c4ff; background: #f7f8ff; }
   .badge {
     display: inline-block;
     font-size: 11.5px;
@@ -53,6 +54,7 @@
     padding: 2px 10px;
     margin-bottom: 6px;
   }
+  .card.daily .badge { background: #dfe4ff; }
   ul.features { padding-left: 22px; }
   ul.features li { margin: 6px 0; }
   .quote {
@@ -77,14 +79,14 @@
 <!-- ==================== Hero ==================== -->
 <div class="hero">
   <h1>Minesweeper</h1>
-  <p class="tagline">The legendary logic puzzle from Windows&nbsp;95 &mdash; reborn
-  for iPhone and iPad. Six difficulty levels, custom boards, and zero distractions.
+  <p class="tagline">The legendary logic puzzle &mdash; six classic difficulties, a new
+  Daily Challenge every day, and three visual themes to play it your way.
   Pure reasoning, in your pocket.</p>
   <a class="cta" href="https://apps.apple.com/app/id6822191921">Download on the App Store</a>
 </div>
 
-<!-- ==================== Six difficulty cards ==================== -->
-<h2>Six Levels of Challenge</h2>
+<!-- ==================== Difficulty cards ==================== -->
+<h2>Six Classic Levels &mdash; Plus a Daily Challenge</h2>
 <div class="cards">
   <div class="card">
     <span class="badge">Beginner</span>
@@ -95,26 +97,32 @@
   <div class="card">
     <span class="badge">Intermediate</span>
     <h3>Intermediate — 9&times;12, 20 mines</h3>
-    <p>The original Windows 3.1 board, slightly taller. A gentle step up that
-    sharpens pattern reading.</p>
+    <p>A gentle step up that sharpens pattern reading without overwhelming you.</p>
   </div>
   <div class="card">
     <span class="badge">Expert</span>
     <h3>Expert — 9&times;16, 30 mines</h3>
-    <p>The Windows 95 expert board. Demands careful flagging and a sharp eye for
+    <p>Taller board, denser mines. Demands careful flagging and a sharp eye for
     numeric patterns.</p>
   </div>
   <div class="card">
     <span class="badge">Ultra</span>
-    <h3>Ultra — 16&times;16, 50 mines</h3>
-    <p>A wider battlefield where every click matters. For players who want more
-    room to plan.</p>
+    <h3>Ultra — 12&times;21, 50 mines</h3>
+    <p>The largest standard board, shaped for portrait phones: bigger cells, more
+    room to plan, every click matters.</p>
   </div>
   <div class="card">
     <span class="badge">Hell</span>
     <h3>Hell — 16&times;30, 99 mines</h3>
     <p>480 cells, 99 mines, one wrong move ends it all. The ultimate endurance
     test for veteran players.</p>
+  </div>
+  <div class="card daily">
+    <span class="badge">Daily</span>
+    <h3>Daily Challenge — 10&times;16, 33 mines</h3>
+    <p>One board for the whole world, generated from the date. Same layout for
+    everyone, resets at midnight &mdash; race the daily leaderboard and keep your
+    streak alive.</p>
   </div>
   <div class="card">
     <span class="badge">Custom</span>
@@ -127,53 +135,71 @@
 <!-- ==================== Features ==================== -->
 <h2>Why You&rsquo;ll Love It</h2>
 <ul class="features">
-  <li><strong>Authentic Windows 95 visual style</strong> &mdash; the gray chrome,
-  the beveled cells, the smiley face, faithfully recreated.</li>
-  <li><strong>Six difficulty levels + unlimited custom</strong> &mdash; from
-  9&times;9 beginner boards to 16&times;30 hellscapes.</li>
-  <li><strong>First-tap safety</strong> &mdash; the mines are placed only after
-  your first click, so you never lose on the opening move.</li>
-  <li><strong>Long-press to flag</strong>, or toggle flag mode and tap to mark
-  suspected mines. The mine counter updates live.</li>
-  <li><strong>Chord tap</strong> &mdash; tap a number whose flagged neighbors
-  equal its value to auto-reveal the rest. The classic desktop shortcut.</li>
-  <li><strong>Hint button</strong> &mdash; when truly stuck, reveal one random
-  safe cell and keep going.</li>
+  <li><strong>Three visual themes</strong> &mdash; iOS, Candy, and Neon. Drag the
+  slider and the board re-skins live as you drag.</li>
+  <li><strong>A new Daily Challenge every day</strong> &mdash; one shared board for
+  all players, a daily leaderboard, and an &ldquo;Unbroken Streak&rdquo; achievement
+  at 7, 30, and 100 days.</li>
+  <li><strong>Classic rules, faithfully kept</strong> &mdash; first-tap safety, chord
+  tap, long-press or flag-mode flagging, hint button, and the smiley reset.</li>
+  <li><strong>Smoothed-out game feel</strong> &mdash; cascading ripple reveals,
+  explosion shake, and flag-drop animations that make every move feel physical.</li>
+  <li><strong>A little personality</strong> &mdash; the app talks to you: a line on
+  cold launch, and a personal remark after every win or loss.</li>
+  <li><strong>Sound that fits</strong> &mdash; background music and game effects,
+  each with its own toggle.</li>
+  <li><strong>Game Center, if you want it</strong> &mdash; six leaderboards (five
+  difficulties plus a daily board) and seven achievements. Entirely optional; the
+  game is complete without it.</li>
   <li><strong>Pause &amp; resume</strong> automatically when the app goes to
   background, so your timer never cheats you.</li>
   <li><strong>Haptic feedback</strong> on flag, win, and loss, so the game feels
   alive in your hands.</li>
-  <li><strong>Best-time tracking</strong> for every difficulty &mdash; chase your
-  own records, not someone else&rsquo;s.</li>
-  <li><strong>16 interface languages</strong>, switchable at any time and
-  applied instantly.</li>
-  <li><strong>100% offline</strong> &mdash; no ads, no accounts, no analytics, no
-  network of any kind. Just you and the board.</li>
+  <li><strong>Records that matter to you</strong> &mdash; best time per difficulty,
+  plus daily records and your current streak, all tracked locally.</li>
+  <li><strong>16 interface languages</strong>, following your system language.</li>
+  <li><strong>Fully playable offline</strong> &mdash; no ads, no analytics, no
+  third-party tracking. Game Center is the only optional network feature.</li>
   <li><strong>Portrait &amp; landscape</strong> on iPhone and iPad.</li>
+</ul>
+
+<!-- ==================== New in 1.1 ==================== -->
+<h2>New in 1.1</h2>
+<ul class="features">
+  <li>Daily Challenge with a worldwide board, daily leaderboard, and streak achievement</li>
+  <li>Theme slider: iOS, Candy, and Neon, with live preview</li>
+  <li>Emotional lines on cold launch and after every result</li>
+  <li>Background music and game sound effects with independent toggles</li>
+  <li>Cascading reveals, explosion shake, and flag-drop animations</li>
+  <li>Ultra and Daily boards reshaped for portrait phones &mdash; bigger cells, easier taps</li>
+  <li>Statistics now include Daily Challenge streak and today&rsquo;s best</li>
 </ul>
 
 <!-- ==================== Heritage ==================== -->
 <h2>More Than a Game</h2>
 <p>Minesweeper has been a fixture of personal computing since the early 1990s.
 Microsoft&rsquo;s 1992 Windows 3.1 release made it a household name, and the
-1995 Windows 95 version &mdash; with its smiley face, mine counter, and 16&times;16
+1995 Windows 95 version &mdash; with its smiley face, mine counter, and 99-mine
 expert board &mdash; is the one most people remember. Generations of office
 workers, students, and travelers have sharpened their logic on this grid.</p>
-<div class="quote">This app keeps that 1995 feel intact on modern iOS: the same
-gray palette, the same first-click safety, the same chord-tap shortcut &mdash;
-rebuilt in SwiftUI for the iPhone and iPad you carry today.</div>
+<div class="quote">This app keeps the 1995 rules intact on modern iOS: first-click
+safety, the same chord-tap shortcut, the same smiley reset &mdash; rebuilt in SwiftUI,
+with three visual themes so you can play it as classic, candy, or neon as you like.</div>
 
 <hr class="divider">
 
 <!-- ==================== 中文 ==================== -->
-<h2>经典扫雷 — 复刻 Windows 95 的怀旧体验</h2>
+<h2>经典扫雷 — 三十年的逻辑，装进口袋</h2>
 <p>扫雷（Minesweeper）是 20 世纪 90 年代最广为人知的单人逻辑游戏之一。
 1992 年随 Windows 3.1 进入大众视野，1995 年随 Windows 95 一同推出的版本——
-灰色边框、笑脸表情、地雷计数器与 16&times;16 的专家级棋盘——成为一代人共同的
-电脑记忆。</p>
-<p>本应用以 SwiftUI 完整复刻这份经典：6 种内置难度 + 无限自定义、长按插旗、
-和弦点击、灯泡提示、首次点击安全、暂停恢复与触觉反馈；并提供 16 种界面语言、
-完全离线、无广告无账号。让这款跨越三十年的经典在 iPhone 与 iPad 上焕发新生。</p>
+笑脸表情、地雷计数器与 99 雷的专家级棋盘——成为一代人共同的电脑记忆。</p>
+<p>本应用以 SwiftUI 重建这份经典：6 种经典难度（9&times;9 至 16&times;30）+
+无限自定义，并新增<strong>每日挑战</strong>——每天一块全球同题棋盘，完成后可冲击
+每日排行榜、累计连续挑战天数；<strong>三种视觉主题</strong>（iOS / 果冻 / 霓虹）
+可拖动滑块实时预览；首次点击安全、长按插旗、和弦点击、灯泡提示、暂停恢复与触觉反馈
+一应俱全；另有情绪化台词、背景音乐与音效独立开关。支持 16 种界面语言、完全离线可玩、
+无广告无内购；Game Center 排行榜与成就为可选功能。让这款跨越三十年的经典，
+在 iPhone 与 iPad 上以你喜欢的模样焕发新生。</p>
 
 <h2>Links</h2>
 <ul>

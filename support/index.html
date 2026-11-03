@@ -65,25 +65,37 @@
   <p><strong>Contact us</strong></p>
   <p>Email: 1057194864@qq.com</p>
   <p>We usually reply within 2&ndash;3 business days. To help us resolve your issue
-  faster, please include your device model, iOS version, and the difficulty level
-  you were playing.</p>
+  faster, please include your device model, iOS version, the difficulty level you were
+  playing, and whether Game Center is enabled.</p>
 </div>
 
 <h2>Frequently Asked Questions</h2>
 
 <details>
   <summary>How do I start a game?</summary>
-  <p>On the home screen, tap any of the six difficulty cards. The board is ready
-  immediately. Your first tap is always safe &mdash; the mines are placed after
-  your first move so you never lose on the opening click.</p>
+  <p>On the home screen, tap any of the six difficulty cards, or the Daily Challenge
+  card. The board is ready immediately. Your first tap is always safe &mdash; mines are
+  placed after your first move, so you never lose on the opening click (the Daily
+  Challenge is the only exception: its board is fixed for everyone, so the first tap
+  carries the normal risk).</p>
 </details>
 
 <details>
-  <summary>What are the six difficulty levels?</summary>
+  <summary>What difficulty levels are available?</summary>
   <p>Beginner (9&times;9, 10 mines), Intermediate (9&times;12, 20 mines), Expert
-  (9&times;16, 30 mines), Ultra (16&times;16, 50 mines), Hell (16&times;30, 99
-  mines), and Custom (you choose the board size from 9&ndash;36 columns by
-  9&ndash;64 rows, and the number of mines).</p>
+  (9&times;16, 30 mines), Ultra (12&times;21, 50 mines), Hell (16&times;30, 99 mines),
+  Daily Challenge (10&times;16, 33 mines, one shared board per day), and Custom
+  (9&ndash;36 columns by 9&ndash;64 rows, with any mine count).</p>
+</details>
+
+<details>
+  <summary>What is the Daily Challenge?</summary>
+  <p>Every day the app generates one board for all players worldwide from the
+  day&rsquo;s date &mdash; same layout, same mines, same seed. It resets at local
+  midnight. Completing it marks the day as done, updates your streak, and submits your
+  time to the daily Game Center leaderboard (when Game Center is available).
+  Consecutive days feed the &ldquo;Unbroken Streak&rdquo; achievement, with checkpoints
+  at 7, 30, and 100 days.</p>
 </details>
 
 <details>
@@ -114,27 +126,53 @@
 </details>
 
 <details>
+  <summary>How do I change the visual theme?</summary>
+  <p>Tap Options on the top bar, choose Theme, and drag the slider between
+  <strong>iOS</strong>, <strong>Candy</strong>, and <strong>Neon</strong>. The preview
+  updates live as you drag.</p>
+</details>
+
+<details>
+  <summary>How do I turn the music and sound effects on or off?</summary>
+  <p>Tap Options, choose Sound, and toggle background music and game effects
+  independently. Your choices are saved automatically.</p>
+</details>
+
+<details>
   <summary>Where are my best times stored?</summary>
-  <p>Locally on your device only, in iOS UserDefaults (one record per difficulty
-  level). We have no access to them, and they are removed permanently when you
-  delete the app.</p>
+  <p>Locally on your device, in iOS UserDefaults &mdash; one record per difficulty
+  level, plus Daily Challenge history and your streak. If Game Center is enabled,
+  completion times are also submitted to the corresponding leaderboards on Apple&rsquo;s
+  servers. Deleting the app removes local records; Game Center entries are managed by
+  Apple.</p>
 </details>
 
 <details>
   <summary>Does the app need an internet connection?</summary>
-  <p>No. The game is 100% offline &mdash; no network access at any time, no
-  leaderboard, no cloud sync, no ads, no analytics.</p>
+  <p>No. The game is fully playable offline. The only network use is Apple Game
+  Center (leaderboards and achievements), which is optional and only active when you
+  are signed in to Game Center on your device.</p>
 </details>
 
 <details>
   <summary>Do I need an account or login?</summary>
-  <p>No. The app has no account system, no ads, and no in-app purchases.</p>
+  <p>No registration is required. Signing in to Apple Game Center is optional &mdash;
+  it only adds leaderboards and achievements. The app has no ads and no in-app
+  purchases.</p>
+</details>
+
+<details>
+  <summary>Where can I see leaderboards and achievements?</summary>
+  <p>Tap Options &rarr; Game Center to open the Game Center dashboard, or use
+  Apple&rsquo;s Game Center app. Leaderboards cover each classic difficulty plus a
+  daily board that resets every day.</p>
 </details>
 
 <details>
   <summary>How do I switch the interface language?</summary>
-  <p>Home screen &rarr; Settings &rarr; Language. Choose from 16 languages; the
-  change takes effect immediately.</p>
+  <p>The app follows your system language and supports 16 languages. To change it,
+  go to iOS Settings &rarr; General &rarr; Language &amp; Region, or set a per-app
+  language in iOS Settings &rarr; Minesweeper &rarr; Language.</p>
 </details>
 
 <details>
@@ -146,8 +184,9 @@
 <details>
   <summary>How do I delete my data?</summary>
   <p>Delete the app from your device. All locally stored data (difficulty choice,
-  custom configuration, best times, and language preference) is removed together
-  with the app.</p>
+  custom configuration, best times, Daily Challenge records, theme and sound
+  preferences) is removed together with the app. Game Center scores and achievements
+  live on Apple&rsquo;s servers and can be managed in iOS Settings &rarr; Game Center.</p>
 </details>
 
 <hr class="divider">
@@ -160,22 +199,31 @@
   <p><strong>联系我们</strong></p>
   <p>邮箱：1057194864@qq.com</p>
   <p>我们通常在 2&ndash;3 个工作日内回复。为便于更快解决问题，请注明您的设备型号、
-  iOS 版本以及出现问题的难度级别。</p>
+  iOS 版本、出现问题的难度级别，以及是否启用了 Game Center。</p>
 </div>
 
 <h2>常见问题</h2>
 
 <details>
   <summary>如何开始一局游戏？</summary>
-  <p>在首页点击任意一个难度卡片即可开局。棋盘会立刻就绪。第一次点击始终是安全的——
-  应用会在您首次落子后才布雷，因此您永远不会一开局就踩雷。</p>
+  <p>在首页点击任意一个难度卡片，或点击&ldquo;每日挑战&rdquo;卡片即可开局。棋盘会立刻就绪。
+  第一次点击始终是安全的&mdash;&mdash;应用会在您首次落子后才布雷，因此您永远不会一开局就踩雷
+  （每日挑战是唯一例外：它的棋盘对全球玩家固定，首击存在正常风险）。</p>
 </details>
 
 <details>
-  <summary>六个难度有什么区别？</summary>
+  <summary>有哪些难度？</summary>
   <p>初级（9&times;9，10 雷）、中级（9&times;12，20 雷）、高级（9&times;16，30 雷）、
-  顶级（16&times;16，50 雷）、地狱（16&times;30，99 雷）、自定义（您可自由选择
-  9&ndash;36 列、9&ndash;64 行的棋盘大小与地雷数）。</p>
+  顶级（12&times;21，50 雷）、地狱（16&times;30，99 雷）、每日挑战（10&times;16，33 雷，
+  每天全球同题），以及自定义（9&ndash;36 列、9&ndash;64 行，地雷数自选）。</p>
+</details>
+
+<details>
+  <summary>什么是每日挑战？</summary>
+  <p>每天应用会根据当天日期生成一块全球同题棋盘&mdash;&mdash;布局、雷位与种子完全一致，
+  本地时间 0 点重置。完成后会标记当日已挑战、更新连续天数，并把用时提交到每日 Game Center
+  排行榜（需可用的 Game Center）。连续挑战天数对应&ldquo;坚持不懈&rdquo;成就，
+  在 7 / 30 / 100 天三个档位解锁进度。</p>
 </details>
 
 <details>
@@ -199,30 +247,53 @@
 
 <details>
   <summary>&ldquo;灯泡提示&rdquo;按钮有什么用？</summary>
-  <p>会自动翻开一个随机的安全格。建议在实在卡住时使用——提示翻开的格子算正常
+  <p>会自动翻开一个随机的安全格。建议在实在卡住时使用&mdash;&mdash;提示翻开的格子算正常
   落子，计时器会继续。</p>
 </details>
 
 <details>
+  <summary>如何更换视觉主题？</summary>
+  <p>点击顶栏&ldquo;选项&rdquo;，选择&ldquo;主题&rdquo;，在
+  <strong>iOS</strong>、<strong>果冻</strong>、<strong>霓虹</strong>三种风格之间拖动滑块即可，
+  预览会实时变化。</p>
+</details>
+
+<details>
+  <summary>如何开关背景音乐与音效？</summary>
+  <p>点击&ldquo;选项&rdquo;，选择&ldquo;音效&rdquo;，可分别开关背景音乐与游戏音效，
+  选择会自动保存。</p>
+</details>
+
+<details>
   <summary>我的最佳成绩保存在哪里？</summary>
-  <p>仅保存在您的设备本地 iOS UserDefaults 中（每个难度一条记录）。我们无法访问
-  这些数据；删除应用后这些记录会被永久清除。</p>
+  <p>本地记录保存在您的设备 iOS UserDefaults 中&mdash;&mdash;每个难度一条，另含每日挑战
+  历史与连续天数。若启用了 Game Center，通关用时还会提交到 Apple 服务器上的对应排行榜。
+  删除应用会清除本地记录；Game Center 上的成绩由 Apple 管理。</p>
 </details>
 
 <details>
   <summary>应用需要联网吗？</summary>
-  <p>不需要。游戏 100% 离线运行——任何时候都不访问网络，没有排行榜、没有云端
-  同步、没有广告、也没有分析上传。</p>
+  <p>不需要。游戏可完全离线游玩。唯一的联网行为是 Apple Game Center（排行榜与成就），
+  它是可选功能，仅在您于设备上登录 Game Center 时生效。</p>
 </details>
 
 <details>
   <summary>需要注册账号或登录吗？</summary>
-  <p>不需要。本应用没有账号系统，没有广告，也不含内购。</p>
+  <p>无需注册。登录 Apple Game Center 为可选项&mdash;&mdash;它只用于排行榜与成就。
+  本应用不含广告，也不含内购。</p>
+</details>
+
+<details>
+  <summary>在哪里查看排行榜和成就？</summary>
+  <p>点击&ldquo;选项&rdquo;&rarr;&ldquo;Game Center&rdquo;可打开 Game Center 面板，
+  也可使用 Apple 的 Game Center App。排行榜覆盖各经典难度，另有一个每日重置的每日榜。</p>
 </details>
 
 <details>
   <summary>如何切换界面语言？</summary>
-  <p>首页 &rarr; 设置 &rarr; 语言切换。可从 16 种语言中选择，切换后立即生效。</p>
+  <p>本应用跟随系统语言，共支持 16 种语言。如需切换，请前往
+  iOS 设置 &rarr; 通用 &rarr; 语言与地区；也可在 iOS 设置 &rarr; 经典扫雷 &rarr; 语言中
+  单独设置本应用的语言。</p>
 </details>
 
 <details>
@@ -232,8 +303,9 @@
 
 <details>
   <summary>如何删除我的数据？</summary>
-  <p>从设备上删除本应用即可。所有本地存储的数据（难度选择、自定义配置、
-  最佳成绩与语言偏好）会随应用一并移除。</p>
+  <p>从设备上删除本应用即可。所有本地存储的数据（难度选择、自定义配置、最佳成绩、
+  每日挑战记录、主题与音效偏好）会随应用一并移除。Game Center 上的成绩与成就在
+  Apple 服务器上，可在 iOS 设置 &rarr; Game Center 中管理。</p>
 </details>
 
 <footer>This page is the official Support page for the Minesweeper iOS app.<br>
